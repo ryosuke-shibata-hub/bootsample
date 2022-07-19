@@ -3,11 +3,11 @@ div {
 }
 
 .container  .row div,
-.container-fruid .row div {
+.container-fluid .row div {
     border: 1px solid lightgray;
 }
 
-.container  .row div, .container-fruid .row div div {
+.container  .row div, .container-fluid .row div div {
     color: darkblue;
     background-color: lightblue;
 }
