@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Chapter4</title>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="./css/style_chap3.css" />
+    <script src="./js/script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>GUI sample</h1>
+        </div>
+    </div>
+    <div class="row">
+        <form method="post" action="#">
+            <input type="email" id="email">
+            <br>
+            <input type="password" id="password">
+            <br>
+            <input type="submit" value="send">
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>GUI sample</h1>
+        </div>
+    </div>
+    <div class="row">
+        <form method="post" action="#">
+            <input type="email" class="form-control" id="mail">
+            <input type="password" class="form-control" id="password">
+            <input type="submit" class="btn" value="send">
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>GUI sample</h1>
+        </div>
+    </div>
+    <div class="row">
+        <form method="post" action="#">
+            <div class="form-group">
+                <label for="email">
+                    Email address
+                </label>
+                <input type="email" class="form-control" id="email" aria-describedby="email-tip" placeholder="your address">
+                <small id="email-tip" class="form-text text-muted">
+                    please type your email address.
+                </small>
+            </div>
+            <div class="form-group">
+                <label for="password">password</label>
+                <input type="password" class="form-control" id="pass" aria-describedby="pass-tip" placeholder="password">
+                <small id="pass-tip" class="form-text text-muted">
+                    please type your password.
+                </small>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn" value="send" aria-describedby="btn-tip">
+                <small id="btn-tip" class="form-text text-muted">
+                    please click here!
+                </small>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>GUI sample</h1>
+        </div>
+    </div>
+    <div class="row">
+        <form method="post" action="#">
+            <div class="form-group">
+                <label for="text">text</label>
+                <input type="text" class="form-control" id="text" placeholder="message">
+            </div>
+            <div class="form-group">
+                <label for="email">email</label>
+                <input type="email" class="form-control" id="email" placeholder="mail address">
+            </div>
+            <div class="form-group">
+                <label for="password">password</label>
+                <input type="password" class="form-control" id="pass" placeholder="password">
+            </div>
+            <div class="form-group">
+                <label for="number">number</label>
+                <input type="number" class="form-control" id="number" value="100">
+            </div>
+            <div class="form-group">
+                <label for="date">date</label>
+                <input type="date" class="form-control" id="date">
+            </div>
+            <div class="form-group">
+                <label for="date">time</label>
+                <input type="time" class="form-control" id="time">
+            </div>
+            <div class="form-group">
+                <label for="color">color</label>
+                <input type="color" class="form-control" id="color">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn" value="send">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>GUI sample</h1>
+        </div>
+    </div>
+    <div class="row">
+        <form method="post" action="#">
+            <div class="form-group">
+                <label for="select">Select</label>
+                <select id="select" class="form-control">
+                    <option>one</option>
+                    <option>two</option>
+                    <option>three</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="select">Select</label>
+                <select id="select" class="form-control" size="3">
+                    <option>one</option>
+                    <option>two</option>
+                    <option>three</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="area">text area</label>
+                <textarea id="area" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn" value="send">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>GUI sample</h1>
+        </div>
+    </div>
+    <div class="row">
+        <form method="post" action="#">
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    checkbox control
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="radio">
+                    radio button a
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="radio">
+                    radio button b
+                </label>
+            </div>
+            <div class="form-check disabled">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="radio" disabled>
+                    radio button c
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn" value="send">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>GUI sample</h1>
+        </div>
+    </div>
+    <div class="row">
+        <form method="post" action="#">
+            <div class="form-group">
+                <label for="text1">input 1</label>
+                <input type="text" id="text1" class="form-control form-control-lg" placeholder="input 1">
+            </div>
+            <div class="form-group">
+                <label for="text2">input 2</label>
+                <input type="text" id="text1" class="form-control" placeholder="input 2">
+            </div>
+            <div class="form-group">
+                <label for="text3">input 3</label>
+                <input type="text" id="text1" class="form-control form-control-sm" placeholder="input 3">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn" value="send">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>GUI sample</h1>
+        </div>
+    </div>
+    <div class="row">
+        <form method="post" action="#">
+            <div class="form-group">
+                <input type="submit" class="btn btn-lg btn-primary" value="primary">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="primary">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-sm btn-primary" value="primary">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>GUI sumple</h1>
+        </div>
+    </div>
+    <div class="row">
+        <form method="post" action="#">
+            <div class="form-group">
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="send">
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <form method="post" action="#">
+            <div class="form-group">
+                <input type="text" class="form-control" disabled>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn  btn-primary" value="send" disabled>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
