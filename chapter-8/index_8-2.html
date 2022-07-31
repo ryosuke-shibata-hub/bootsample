@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Chapter7</title>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="h4 mb-4">Alert/Dialog</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="row m-3">
+                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="This is Tooltip">
+                    Show Tooltip!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <p class="text-dark lead">This is
+                <u class="text-danger">
+                    <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="This is tooltip help.">
+                        tooltip
+                    </span>
+                </u>
+                Sample
+                <u class="text-primary">
+                    <span class="text-primary" data-toggle="tooltip" data-placement="top" title="This is Message help.">
+                        Message
+                    </span>
+                </u>!
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="row m-3">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-primary"
+                    data-placement="left"
+                    data-toggle="popover"
+                    data-placement="left"
+                    data-trigger="focus"
+                    title="Popover Title"
+                    data-content="This is Popover contetnt">
+                        Click Me!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1">
+                    Hide Collapse1
+                </button>
+            </p>
+            <div class="collapse show" id="collapse1">
+                <div class="card card-body">
+                    <h4>What is Collapse</h4>
+                    <p>Do you know collapse? Yes, this is collapse!</p>
+                </div>
+            </div>
+            <p class="mt-3">
+                this is sample content
+                this is sample content
+                this is sample content
+                this is sample content
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="collapse show" id="c1" data-toggle="collapse" data-target="#c1">
+                <div class="card card-body">
+                    <h4>Collapse A-1</h4>
+                    <p>This is first collapse content</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="collapse show" id="c2" data-toggle="collapse" data-target="#c2">
+                <div class="card card-body">
+                    <h4>Collapse A-2</h4>
+                    <p>This is secound collapse content</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="collapse show" id="c3" data-toggle="collapse" data-target="#c3">
+                <div class="card card-body">
+                    <h4>Collapse A-3</h4>
+                    <p>This is third collapse content</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="collapse show" id="c4" data-toggle="collapse" data-target="#c4">
+                <div class="card card-body">
+                    <h4>Collapse A-4</h4>
+                    <p>This is fourth collapse content</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <!--ここからアコーディオン-->
+            <div id="accordion-1" role="tablist">
+                <!--1つ目のカード-->
+                <div class="card">
+                    <!--ヘッダー-->
+                    <div class="card-header" role="tab">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapse-1">
+                                First Item
+                            </a>
+                        </h5>
+                    </div>
+                    <!--ここからボディ-->
+                    <div id="collapse-1" class="collapse show" role="tabpanel" data-parent="#accordion-1">
+                        <div class="card-body">
+                            <p>
+                                this is first collapse .
+                                this is first collapse .
+                                this is first collapse .
+                                this is first collapse .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--2つ目のカード-->
+                <div class="card">
+                    <!--ヘッダー-->
+                    <div class="card-header" role="tab">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapse-2">
+                                Secound Item
+                            </a>
+                        </h5>
+                    </div>
+                    <!--ここからボディ-->
+                    <div id="collapse-2" class="collapse show" role="tabpanel" data-parent="#accordion-1">
+                        <div class="card-body">
+                            <p>
+                                this is secound collapse contetnt.
+                                this is secound collapse contetnt.
+                                this is secound collapse contetnt.
+                                this is secound collapse contetnt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--3つ目のカード-->
+                <div class="card">
+                    <!--ヘッダー-->
+                    <div class="card-header" role="tab">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapse-3">
+                                Secound Item
+                            </a>
+                        </h5>
+                    </div>
+                    <!--ここからボディ-->
+                    <div id="collapse-3" class="collapse show" role="tabpanel" data-parent="#accordion-1">
+                        <div class="card-body">
+                            <p>
+                                this is third collapse contetnt.
+                                this is third collapse contetnt.
+                                this is third collapse contetnt.
+                                this is third collapse contetnt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
