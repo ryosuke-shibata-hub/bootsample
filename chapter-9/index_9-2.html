@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Chapter9</title>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="h4 mb-4">Script</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button type="button" class="btn btn-secondary">
+                Popover button
+            </button>
+            <button type="button" class="btn btn-secondary">
+                Popover button
+            </button>
+            <button type="button" class="btn btn-secondary">
+                Popover button
+            </button>
+            <button type="button" class="btn btn-secondary">
+                Popover button
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="h4 mb-4">Script</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div id="alert1" class="lead">this is info alert message</div>
+            <div id="alert2" class="lead">this is warning alert message</div>
+            <div id="alert3" class="lead">this is danger alert message</div>
+            <div>
+                <button class="btn btn-primary" onclick="doAction();">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="h4 mb-4">Script</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div id="alert4">Alert will appear here!</div>
+            <button type="button" class="btn btn-secondary" onclick="dodoAction();">
+                Popover button
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="h4 mb-4">Script</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="modal fade" id="dialog1">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Dialog!</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>this is modal dialog sample!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                Click me!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn btn-primary" onclick="dododoAction();">
+                Click
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="h4 mb-4">Script</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p id="msg">please click button...</p>
+            <div class="modal fade" id="dialog2">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Dialog!</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>this is modal dialog sample</p>
+                            <input type="text" id="input1" class="form-control">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="doOKok();">
+                                OK!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-primary" onclick="dododododoAction();">
+                    Click
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+(function () {
+    var img = '<img src="../img/sample.jpeg" style="width:75px";>';
+    var title = '<div class="display-4">This is Popover!</div>';
+    var content = "This is <b>popover</b> sample content. Isn't in nice?";
+    var html = '<div class="row"><div class="col-4">' + img + '</div>' +
+        '<div class="col-8 lead">' + content + '</div></div'
+
+    $('[type=button]')
+    .popover({'placement':'bottom', trigger: 'focus', 'title':title,
+                'content':html, 'html':true})
+
+    $('#alert1').addClass('alert alert-info');
+    $('#alert2').addClass('alert alert-warning');
+    $('#alert3').addClass('alert alert-danger');
+})();
+
+
+    var counter = 0;
+function doAction() {
+    counter ++;
+    $('#alert' + counter).alert('close');
+}
+var counter = 0;
+function dodoAction() {
+    $('#alert4').append(
+        $('<div>').attr('role','alert')
+            .addClass('alert alert-primary alert-dismissable')
+            .text('No,' + ++counter + '.This is alert!')
+            .append(
+                $('<button>')
+                    .addClass('close')
+                    .attr('data-dismiss','alert')
+                    .append(
+                        $('<span>')
+                            .attr('area-hidden', true)
+                            .text('×')
+                    )
+            )
+    )
+}
+
+function dododoAction() {
+    $('#dialog1').modal();
+}
+
+(function() {
+    $('#dialog2').on('show.bs.modal', function() {
+        $('#msg').text('please click button...');
+    });
+    $('#dialog2').on('hide.bs.modal', function() {
+        $('#input1').val('');
+    });
+})();
+function dododododoAction() {
+    $('#dialog2').modal({'backdrop':'static', 'keyboard':true});
+}
+function doOKok() {
+    var input = $('#input1').val();
+    $('#msg').text('you typed: "' + input + '".');
+}
+</script>
+</html>
